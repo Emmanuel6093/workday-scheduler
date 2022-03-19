@@ -2,7 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 textarea{
@@ -44,7 +44,7 @@ textarea{
 }
 
 .past {
-  background-color: #e7e55dc2;
+  background-color: #C0C0C0;
   color: white;
 }
 
@@ -58,11 +58,6 @@ textarea{
   color: white;
 }
 
-
-.saveBtn {
-  background-color: #0fccf7;
-  color: white;
-}
 
 .save-delete {
   background-color: #0fccf7;
