@@ -38,13 +38,13 @@ textarea{
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: white;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #e7e55dc2;
   color: white;
 }
 
@@ -58,20 +58,56 @@ textarea{
   color: white;
 }
 
+
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #0fccf7;
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+.save-delete {
+  background-color: #0fccf7;
+  color: white; 
+  text-align: center;
+  padding-top: 25px;
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
-.save-delete
+.save-delete i.fa-save {
+  font-size: 40px;
+}
+
+.save-delete i.fa-save:hover {
+  color: #3cff0b;
+  font-size: 50px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.save-delete i.fa-trash {
+  font-size: 25px;
+  padding-left: 8px;
+}
+
+.save-delete i.fa-trash:hover {
+  color: #ff0000b9;
+  font-size: 25px;
+  transition: all .5 ease-in-out;
+  cursor: pointer; 
+}
+
+.event-group {
+  padding: 14px 0 0 2px; 
+}
+
+.events { 
+  color: #000000;
+  margin: 0; 
+  height: 75px; 
+  font-size: 14px;
+  line-height: 22px;
+}
 
 ul.event-group {
   min-height: 75px; 
