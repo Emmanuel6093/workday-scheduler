@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: whitesmoke;
 }
 
 textarea{
@@ -69,3 +70,12 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.save-delete
+
+ul.event-group {
+  min-height: 75px; 
+  margin: 0; 
+  list-style-type: none;
+}
+

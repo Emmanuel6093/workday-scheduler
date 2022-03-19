@@ -199,3 +199,57 @@ $('#save-delete17').on('click', 'i.fa-save', function(){
     localStorage.setItem('hour17', JSON.stringify(event17));
 })
 
+
+// delete for each timeblock
+$('#save-delete9').on('click', 'i.fa-trash', function() {
+    localStorage.removeItem('hour9');
+    $('#eventblock9').val("");
+})
+
+$('#save-delete10').on('click', 'i.fa-trash', function() {
+    localStorage.removeItem('hour10');
+    $('#eventblock10').val("");
+})
+
+$('#save-delete11').on('click', 'i.fa-trash', function() {
+    localStorage.removeItem('hour11');
+    $('#eventblock11').val("");
+})
+
+$('#save-delete12').on('click', 'i.fa-trash', function() {
+    localStorage.removeItem('hour12');
+    $('#eventblock12').val("");
+})
+
+$('#save-delete13').on('click', 'i.fa-trash', function() {
+    localStorage.removeItem('hour13');
+    $('#eventblock13').val("");
+})
+
+$('#save-delete14').on('click', 'i.fa-trash', function() {
+    localStorage.removeItem('hour14');
+    $('#eventblock14').val("");
+})
+
+$('#save-delete15').on('click', 'i.fa-trash', function() {
+    localStorage.removeItem('hour15');
+    $('#eventblock15').val("");
+})
+
+$('#save-delete16').on('click', 'i.fa-trash', function() {
+    localStorage.removeItem('hour16');
+    $('#eventblock16').val("");
+})
+
+$('#save-delete17').on('click', 'i.fa-trash', function() {
+    localStorage.removeItem('hour17');
+    $('#eventblock17').val("");
+})
+
+setInterval(function() {
+    $('.event-group .events').each(function (index, el) {
+        auditTime(el);
+    });
+}, (1000 * 60)); //30min
+
+auditTime();
