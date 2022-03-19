@@ -152,3 +152,50 @@ let auditTime = function () {
         $('#timeblocks17').addClass('future');
     }
 };
+
+// save for each timeblock
+$('#save-delete9').on('click', 'i.fa-save', function(){
+    let event9 = $('#eventblock9').val().trim();
+    localStorage.setItem('hour9', JSON.stringify(event9));
+})
+
+$('#save-delete10').on('click', 'i.fa-save', function(){
+    let event10 = $('#eventblock10').val().trim();
+    localStorage.setItem('hour10', JSON.stringify(event10));
+})
+
+$('#save-delete11').on('click', 'i.fa-save', function(){
+    let event11 = $('#eventblock11').val().trim();
+    localStorage.setItem('hour11', JSON.stringify(event11));
+})
+
+$('#save-delete12').on('click', 'i.fa-save', function(){
+    let event12 = $('#eventblock12').val().trim();
+    localStorage.setItem('hour12', JSON.stringify(event12));
+})
+
+$('#save-delete13').on('click', 'i.fa-save', function(){
+    let event13 = $('#eventblock13').val().trim();
+    localStorage.setItem('hour13', JSON.stringify(event13));
+})
+
+$('#save-delete14').on('click', 'i.fa-save', function(){
+    let event14 = $('#eventblock14').val().trim();
+    localStorage.setItem('hour14', JSON.stringify(event14));
+})
+
+$('#save-delete15').on('click', 'i.fa-save', function(){
+    let event15 = $('#eventblock15').val().trim();
+    localStorage.setItem('hour15', JSON.stringify(event15));
+})
+
+$('#save-delete16').on('click', 'i.fa-save', function(){
+    let event16 = $('#eventblock16').val().trim();
+    localStorage.setItem('hour16', JSON.stringify(event16));
+})
+
+$('#save-delete17').on('click', 'i.fa-save', function(){
+    let event17 = $('#eventblock17').val().trim();
+    localStorage.setItem('hour17', JSON.stringify(event17));
+})
+
