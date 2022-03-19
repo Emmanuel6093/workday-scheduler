@@ -45,3 +45,110 @@ $.each(hours, function (index, value) {
         (index + 9) + "'><textarea class='events col-12' id='eventblock" + (index + 9) + "'>" + events[index] + "</textarea></div>" +
         "<div class='col-2 save-delete' id='save-delete" + (index + 9) + "'><i class='fas fa-save' title='Save Event'></i> <i class='fas fa-trash' title='Remove Event'></i></div></div></div>");
 });
+
+// current day at top
+$('currentDay').text(currentDay)
+
+let auditTime = function () {
+    currentTime = moment().format('hh:mm:ss');
+    
+
+    // hour9
+    if (moment().isBetween(hour9, hour10)) {
+        $('#timeblocks9').addClass('present'); 
+    } 
+    else if (moment().isAfter(hour10)) {
+        $('#timeblocks9').addClass('past'); 
+    }
+     else {
+        $('#timeblocks9').addClass('future');
+    }
+
+    // hour10
+    if (moment().isBetween(hour10, hour11)) {
+        $('#timeblocks10').addClass('present');
+    }
+    else if (moment().isAfter(hour11)) {
+        $('#timeblocks10').addClass('past');
+    }
+    else {
+        $('#timeblocks10').addClass('future');
+    }
+
+    // hour11
+    if (moment().isBetween(hour11, hour12)) {
+        $('#timeblocks11').addClass('present'); 
+    }
+    else if (moment().isAfter(hour12)) {
+        $('#timeblocks12').addClass('past');
+    }
+    else {
+        $('#timeblocks12').addClass('future'); 
+    }
+
+    // hour12
+    if (moment().isBetween(hour12, hour13)) {
+        $('#timeblocks12').addClass('present'); 
+    } 
+    else if (moment().isAfter(hour13)) {
+        $('#timeblocks12').addClass('past'); 
+    }
+     else {
+        $('#timeblocks12').addClass('future');
+    }
+
+    // hour13
+    if (moment().isBetween(hour13, hour14)) {
+        $('#timeblocks13').addClass('present'); 
+    } 
+    else if (moment().isAfter(hour14)) {
+        $('#timeblocks13').addClass('past'); 
+    }
+     else {
+        $('#timeblocks13').addClass('future');
+    }
+
+    // hour14
+    if (moment().isBetween(hour14, hour15)) {
+        $('#timeblocks14').addClass('present'); 
+    } 
+    else if (moment().isAfter(hour15)) {
+        $('#timeblocks14').addClass('past'); 
+    }
+     else {
+        $('#timeblocks14').addClass('future');
+    }
+
+    // hour15
+    if (moment().isBetween(hour15, hour16)) {
+        $('#timeblocks15').addClass('present'); 
+    } 
+    else if (moment().isAfter(hour16)) {
+        $('#timeblocks15').addClass('past'); 
+    }
+     else {
+        $('#timeblocks15').addClass('future');
+    }
+
+    // hour16
+    if (moment().isBetween(hour16, hour17)) {
+        $('#timeblocks16').addClass('present'); 
+    } 
+    else if (moment().isAfter(hour17)) {
+        $('#timeblocks16').addClass('past'); 
+    }
+     else {
+        $('#timeblocks16').addClass('future');
+    }
+
+    // hour17
+    if (moment().isBetween(hour17, hour18)) {
+        $('#timeblocks17').addClass('present'); 
+    } 
+    else if (moment().isAfter(hour17)) {
+        $('#timeblocks17').addClass('past'); 
+    }
+     else {
+        $('#timeblocks17').addClass('future');
+    }
+};
